@@ -1,0 +1,44 @@
+chess_project/
+│── game/                     # Pygame-based Chess Game
+│   ├── assets/               # Images, sounds, fonts
+│   │   ├── pieces/           # Chess piece images
+│   │   ├── board.png
+│   ├── gui/                  # UI-related code
+│   │   ├── menu.py           # Main menu UI
+│   │   ├── board_ui.py       # Chessboard rendering
+│   │   ├── game_over.py      # End screen UI
+│   ├── logic/                # Game logic
+│   │   ├── board.py          # Board representation
+│   │   ├── pieces.py         # Piece movements
+│   │   ├── move_validation.py# Valid move checks
+│   │   ├── game_manager.py   # Game flow management
+│   ├── main.py               # Entry point for the game
+│
+│── engine/                   # Chess Engine
+│   ├── ai/                   # AI algorithms (minimax, alpha-beta, etc.)
+│   │   ├── minimax.py        # Minimax implementation
+│   │   ├── evaluation.py     # Position evaluation functions
+│   ├── search/               # Move searching and heuristics
+│   │   ├── move_ordering.py  # Move sorting techniques
+│   │   ├── transposition.py  # Hashing positions
+│   ├── engine.py             # Main engine logic
+│
+│── tests/                    # Unit tests
+│   ├── test_game.py          # Tests for game logic
+│   ├── test_engine.py        # Tests for engine functionality
+│
+│── docs/                     # Documentation
+│   ├── README.md             # Project overview
+│   ├── DESIGN.md             # Design choices & architecture
+│   ├── AI_ALGORITHMS.md      # Explanation of AI strategies
+│
+│── config/                   # Configuration files
+│   ├── settings.json         # User settings
+│   ├── keybindings.json      # Key mappings
+│
+│── scripts/                   # Utility scripts
+│   ├── profiler.py           # Performance profiling
+│   ├── generate_moves.py     # Move generation benchmarking
+│
+│── requirements.txt          # Python dependencies
+│── .gitignore                # Git ignore rules
